@@ -4,11 +4,11 @@ base_dir=$(cd "`dirname "0"`" && pwd)
 cpp_out="$base_dir/generated-src/cpp"
 jni_out="$base_dir/generated-src/jni"
 objc_out="$base_dir/generated-src/objc"
-java_out="$base_dir/generated-src/java/com/demicapps/pocketdm"
-java_package="com.demicapps.pocketdm"
-namespace="pocketdm"
-objc_prefix="PDM"
-djinni_file="pocketdm.djinni"
+java_out="$base_dir/generated-src/java/com/mycompany/cpptimer"
+java_package="com.mycompany.cpptimer"
+namespace="cpptimer"
+objc_prefix="CPPT"
+djinni_file="cpptimer.djinni"
  
 deps/djinni/src/run \
    --java-out $java_out \
@@ -17,6 +17,7 @@ deps/djinni/src/run \
    \
    --cpp-out $cpp_out \
    --cpp-namespace $namespace \
+   --ident-cpp-method FooBar \
    \
    --jni-out $jni_out \
    --ident-jni-class NativeFooBar \
