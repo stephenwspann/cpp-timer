@@ -1,0 +1,16 @@
+timer = interface +c {
+    
+    # constructor
+    static create_with_listener(listener: timer_listener): timer;
+
+    start_timer(seconds: i32);
+
+}
+
+timer_listener = interface +j +o {
+    
+    timer_ticked(seconds_remaining: i32);
+
+    timer_ended();
+
+}
