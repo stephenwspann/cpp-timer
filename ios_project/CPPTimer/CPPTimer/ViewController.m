@@ -16,8 +16,10 @@
     // initialize the timer
     _timer = [CPPTTimer createWithListener:self];
     
-    // start a 5 second timer
+    // start a 5 second timer without blocking viewDidLoad?
     [_timer startTimer:5];
+    
+    NSLog(@"viewDidLoad completed.");
     
 }
 
@@ -26,11 +28,11 @@
 }
 
 - (void)timerEnded {
-    NSLog(@"timer ended.");
+    NSLog(@"Obj-C: timerEnded.");
 }
 
 - (void)timerTicked:(int32_t)secondsRemaining {
-    NSLog(@"timer ticked with %d seconds remaining.", secondsRemaining);
+    NSLog(@"Obj-C: timerTicked with %d seconds remaining.", secondsRemaining);
 }
 
 @end
