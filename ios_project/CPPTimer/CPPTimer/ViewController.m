@@ -1,27 +1,36 @@
-//
-//  ViewController.m
-//  CPPTimer
-//
-//  Created by Stephen Spann on 11/9/15.
-//  Copyright © 2015 Demic Apps. All rights reserved.
-//
-
 #import "ViewController.h"
+#import "CPPTTimer.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    CPPTTimer *_timer;
+}
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // initialize the timer
+    _timer = [CPPTTimer createWithListener:self];
+    
+    // start a 5 second timer
+    [_timer startTimer:5];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)timerEnded {
+    NSLog(@"timer ended.");
+}
+
+- (void)timerTicked:(int32_t)secondsRemaining {
+    NSLog(@"timer ticked with %d seconds remaining.", secondsRemaining);
 }
 
 @end

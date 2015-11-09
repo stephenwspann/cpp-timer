@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F15CA1C11BF12C1400D2756D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F15CA1C01BF12C1400D2756D /* main.m */; };
+		F15CA1C11BF12C1400D2756D /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = F15CA1C01BF12C1400D2756D /* main.mm */; };
 		F15CA1C41BF12C1400D2756D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F15CA1C31BF12C1400D2756D /* AppDelegate.m */; };
 		F15CA1C71BF12C1400D2756D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15CA1C61BF12C1400D2756D /* ViewController.m */; };
 		F15CA1CA1BF12C1400D2756D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15CA1C81BF12C1400D2756D /* Main.storyboard */; };
 		F15CA1CC1BF12C1400D2756D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15CA1CB1BF12C1400D2756D /* Assets.xcassets */; };
 		F15CA1CF1BF12C1400D2756D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15CA1CD1BF12C1400D2756D /* LaunchScreen.storyboard */; };
+		F15CA1DD1BF12CD500D2756D /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = F15CA1D91BF12CD500D2756D /* DJIError.mm */; };
+		F15CA1DE1BF12CD500D2756D /* DJIProxyCaches.mm in Sources */ = {isa = PBXBuildFile; fileRef = F15CA1DC1BF12CD500D2756D /* DJIProxyCaches.mm */; };
+		F15CA1EA1BF12D1300D2756D /* CPPTTimer+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = F15CA1E51BF12D1300D2756D /* CPPTTimer+Private.mm */; };
+		F15CA1EB1BF12D1300D2756D /* CPPTTimerListener+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = F15CA1E81BF12D1300D2756D /* CPPTTimerListener+Private.mm */; };
+		F15CA1EF1BF12E5700D2756D /* timer_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F15CA1ED1BF12E5700D2756D /* timer_impl.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F15CA1BC1BF12C1400D2756D /* CPPTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPPTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F15CA1C01BF12C1400D2756D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F15CA1C01BF12C1400D2756D /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		F15CA1C21BF12C1400D2756D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F15CA1C31BF12C1400D2756D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F15CA1C51BF12C1400D2756D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -26,6 +31,22 @@
 		F15CA1CB1BF12C1400D2756D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F15CA1CE1BF12C1400D2756D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F15CA1D01BF12C1400D2756D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15CA1D71BF12CD500D2756D /* DJICppWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJICppWrapperCache+Private.h"; path = "../../deps/djinni/support-lib/objc/DJICppWrapperCache+Private.h"; sourceTree = "<group>"; };
+		F15CA1D81BF12CD500D2756D /* DJIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJIError.h; path = "../../deps/djinni/support-lib/objc/DJIError.h"; sourceTree = "<group>"; };
+		F15CA1D91BF12CD500D2756D /* DJIError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DJIError.mm; path = "../../deps/djinni/support-lib/objc/DJIError.mm"; sourceTree = "<group>"; };
+		F15CA1DA1BF12CD500D2756D /* DJIMarshal+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIMarshal+Private.h"; path = "../../deps/djinni/support-lib/objc/DJIMarshal+Private.h"; sourceTree = "<group>"; };
+		F15CA1DB1BF12CD500D2756D /* DJIObjcWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DJIObjcWrapperCache+Private.h"; path = "../../deps/djinni/support-lib/objc/DJIObjcWrapperCache+Private.h"; sourceTree = "<group>"; };
+		F15CA1DC1BF12CD500D2756D /* DJIProxyCaches.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DJIProxyCaches.mm; path = "../../deps/djinni/support-lib/objc/DJIProxyCaches.mm"; sourceTree = "<group>"; };
+		F15CA1E11BF12D0900D2756D /* timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = timer.hpp; sourceTree = "<group>"; };
+		F15CA1E21BF12D0900D2756D /* timer_listener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = timer_listener.hpp; sourceTree = "<group>"; };
+		F15CA1E41BF12D1300D2756D /* CPPTTimer+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPPTTimer+Private.h"; sourceTree = "<group>"; };
+		F15CA1E51BF12D1300D2756D /* CPPTTimer+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CPPTTimer+Private.mm"; sourceTree = "<group>"; };
+		F15CA1E61BF12D1300D2756D /* CPPTTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPTTimer.h; sourceTree = "<group>"; };
+		F15CA1E71BF12D1300D2756D /* CPPTTimerListener+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPPTTimerListener+Private.h"; sourceTree = "<group>"; };
+		F15CA1E81BF12D1300D2756D /* CPPTTimerListener+Private.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CPPTTimerListener+Private.mm"; sourceTree = "<group>"; };
+		F15CA1E91BF12D1300D2756D /* CPPTTimerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPTTimerListener.h; sourceTree = "<group>"; };
+		F15CA1ED1BF12E5700D2756D /* timer_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = timer_impl.cpp; path = ../../src/timer_impl.cpp; sourceTree = "<group>"; };
+		F15CA1EE1BF12E5700D2756D /* timer_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = timer_impl.hpp; path = ../../src/timer_impl.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +63,9 @@
 		F15CA1B31BF12C1400D2756D = {
 			isa = PBXGroup;
 			children = (
+				F15CA1D61BF12CAB00D2756D /* Djinni */,
+				F15CA1DF1BF12CF500D2756D /* Generated Source */,
+				F15CA1EC1BF12E2900D2756D /* Source */,
 				F15CA1BE1BF12C1400D2756D /* CPPTimer */,
 				F15CA1BD1BF12C1400D2756D /* Products */,
 			);
@@ -74,9 +98,64 @@
 		F15CA1BF1BF12C1400D2756D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F15CA1C01BF12C1400D2756D /* main.m */,
+				F15CA1C01BF12C1400D2756D /* main.mm */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F15CA1D61BF12CAB00D2756D /* Djinni */ = {
+			isa = PBXGroup;
+			children = (
+				F15CA1D71BF12CD500D2756D /* DJICppWrapperCache+Private.h */,
+				F15CA1D81BF12CD500D2756D /* DJIError.h */,
+				F15CA1D91BF12CD500D2756D /* DJIError.mm */,
+				F15CA1DA1BF12CD500D2756D /* DJIMarshal+Private.h */,
+				F15CA1DB1BF12CD500D2756D /* DJIObjcWrapperCache+Private.h */,
+				F15CA1DC1BF12CD500D2756D /* DJIProxyCaches.mm */,
+			);
+			name = Djinni;
+			sourceTree = "<group>";
+		};
+		F15CA1DF1BF12CF500D2756D /* Generated Source */ = {
+			isa = PBXGroup;
+			children = (
+				F15CA1E01BF12D0900D2756D /* cpp */,
+				F15CA1E31BF12D1300D2756D /* objc */,
+			);
+			name = "Generated Source";
+			sourceTree = "<group>";
+		};
+		F15CA1E01BF12D0900D2756D /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				F15CA1E11BF12D0900D2756D /* timer.hpp */,
+				F15CA1E21BF12D0900D2756D /* timer_listener.hpp */,
+			);
+			name = cpp;
+			path = "../../generated-src/cpp";
+			sourceTree = "<group>";
+		};
+		F15CA1E31BF12D1300D2756D /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				F15CA1E41BF12D1300D2756D /* CPPTTimer+Private.h */,
+				F15CA1E51BF12D1300D2756D /* CPPTTimer+Private.mm */,
+				F15CA1E61BF12D1300D2756D /* CPPTTimer.h */,
+				F15CA1E71BF12D1300D2756D /* CPPTTimerListener+Private.h */,
+				F15CA1E81BF12D1300D2756D /* CPPTTimerListener+Private.mm */,
+				F15CA1E91BF12D1300D2756D /* CPPTTimerListener.h */,
+			);
+			name = objc;
+			path = "../../generated-src/objc";
+			sourceTree = "<group>";
+		};
+		F15CA1EC1BF12E2900D2756D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F15CA1ED1BF12E5700D2756D /* timer_impl.cpp */,
+				F15CA1EE1BF12E5700D2756D /* timer_impl.hpp */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +228,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15CA1DE1BF12CD500D2756D /* DJIProxyCaches.mm in Sources */,
+				F15CA1EF1BF12E5700D2756D /* timer_impl.cpp in Sources */,
+				F15CA1DD1BF12CD500D2756D /* DJIError.mm in Sources */,
 				F15CA1C71BF12C1400D2756D /* ViewController.m in Sources */,
 				F15CA1C41BF12C1400D2756D /* AppDelegate.m in Sources */,
-				F15CA1C11BF12C1400D2756D /* main.m in Sources */,
+				F15CA1EB1BF12D1300D2756D /* CPPTTimerListener+Private.mm in Sources */,
+				F15CA1EA1BF12D1300D2756D /* CPPTTimer+Private.mm in Sources */,
+				F15CA1C11BF12C1400D2756D /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

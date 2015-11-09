@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1A2F006A2442105AAB709A18C5A56B5D7D52F3A0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4E8EC1E97A744AECB2BFFE9D3D48C062D250382B" : 0,
+    "1A2F006A2442105AAB709A18C5A56B5D7D52F3A0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CD11D6A1-A525-4B9F-8CD1-F35B9B84112C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4E8EC1E97A744AECB2BFFE9D3D48C062D250382B" : "cpp-timer\/deps\/djinni\/",
+    "1A2F006A2442105AAB709A18C5A56B5D7D52F3A0" : "cpp-timer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CPPTimer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios_project\/CPPTimer\/CPPTimer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:spanndemic\/cpp-timer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A2F006A2442105AAB709A18C5A56B5D7D52F3A0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dropbox\/djinni.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4E8EC1E97A744AECB2BFFE9D3D48C062D250382B"
+    }
+  ]
+}
