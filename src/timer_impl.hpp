@@ -1,9 +1,8 @@
 #pragma once
 
-#include "timer.hpp"
-#include <boost/thread.hpp>
 #include <boost/asio.hpp>
 
+#include "timer.hpp"
 #include "timer_listener.hpp"
 
 namespace cpptimer {
@@ -19,7 +18,7 @@ namespace cpptimer {
         
     private:
         
-        void TimerTick();
+        void TimerTick(const boost::system::error_code& e);
         
         std::shared_ptr<TimerListener> listener_;
         
