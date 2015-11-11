@@ -14,7 +14,6 @@ class Timer {
 public:
     virtual ~Timer() {}
 
-    /** constructor */
     static std::shared_ptr<Timer> CreateWithListener(const std::shared_ptr<TimerListener> & listener);
 
     virtual void StartTimer(int32_t seconds) = 0;

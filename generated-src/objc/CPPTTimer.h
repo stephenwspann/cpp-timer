@@ -8,7 +8,6 @@
 
 @interface CPPTTimer : NSObject
 
-/** constructor */
 + (nullable CPPTTimer *)createWithListener:(nullable id<CPPTTimerListener>)listener;
 
 - (void)startTimer:(int32_t)seconds;

@@ -8,7 +8,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public abstract class Timer {
     public abstract void startTimer(int seconds);
 
-    /** constructor */
     public static native Timer createWithListener(TimerListener listener);
 
     private static final class CppProxy extends Timer
